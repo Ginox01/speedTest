@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Speed Test</title>
+</head>
+<body>
+    <section class="wrap-app">
+        <div id="container-words"></div>
+        <div class="wrap-input">
+            <input type="text" placeholder="word" id="word">
+            <a href="index.html">Ripeti Test</a>
+        </div>
+        <p>Secondi rimanenti : <span id="timer"></span></p>
+        <div id="score"></div>
+        
+    </section>
+    
+    <script type="module">
+        import speedTest from "./js/index.js"
+        window.addEventListener("DOMContentLoaded", speedTest())
+    </script>
+</body>
+</html>
